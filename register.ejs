@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+        body {
+            background-color: paleturquoise;
+        }
+
+        input[type=text], input[type=password], input[type=email] {
+            margin-left: 580px;
+            padding-left: 10px;
+            border: 2px solid;
+            color: black;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: rebeccapurple;
+            padding-top: 50px;
+        }
+
+        p {
+            color: black;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            font-style: italic;
+            padding-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, Welcome to Binar Academy!</h1>
+    <p>Please Sign Up here</p>
+    
+    <form action="/register" method="post">
+        <center><label for="username">Username</label></center>
+        <br />
+
+        <input type="text" name="username" placeholder="Masukkan Username">
+        <br />
+
+        <center><label for="email">Email</label></center>
+        <br />
+
+        <input type="email" name="email" placeholder="Masukkan Email">
+        <br />
+
+        <center><label for="password">Password</label></center>
+        <br />
+
+        <input type="password" name="password" placeholder="Masukkan Password">
+        <br />
+
+        <center><button type="submit">Sign Up</button></center>
+    </form>
+</body>
+</html>
